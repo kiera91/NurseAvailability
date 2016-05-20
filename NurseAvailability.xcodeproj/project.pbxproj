@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A25A39FE1CEF1E1B00600389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A39FD1CEF1E1B00600389 /* AppDelegate.swift */; };
+		A25A3A001CEF1E1B00600389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A39FF1CEF1E1B00600389 /* ViewController.swift */; };
+		A25A3A031CEF1E1B00600389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25A3A011CEF1E1B00600389 /* Main.storyboard */; };
+		A25A3A051CEF1E1B00600389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25A3A041CEF1E1B00600389 /* Assets.xcassets */; };
+		A25A3A081CEF1E1B00600389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25A3A061CEF1E1B00600389 /* LaunchScreen.storyboard */; };
+		A25A3A131CEF1E1B00600389 /* NurseAvailabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A121CEF1E1B00600389 /* NurseAvailabilityTests.swift */; };
+		A25A3A1E1CEF1E1B00600389 /* NurseAvailabilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A1D1CEF1E1B00600389 /* NurseAvailabilityUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A25A3A0F1CEF1E1B00600389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A25A39F21CEF1E1B00600389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A25A39F91CEF1E1B00600389;
+			remoteInfo = NurseAvailability;
+		};
+		A25A3A1A1CEF1E1B00600389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A25A39F21CEF1E1B00600389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A25A39F91CEF1E1B00600389;
+			remoteInfo = NurseAvailability;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A25A39FA1CEF1E1B00600389 /* NurseAvailability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NurseAvailability.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25A39FD1CEF1E1B00600389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A25A39FF1CEF1E1B00600389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A25A3A021CEF1E1B00600389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A25A3A041CEF1E1B00600389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A25A3A071CEF1E1B00600389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A25A3A091CEF1E1B00600389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25A3A0E1CEF1E1B00600389 /* NurseAvailabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NurseAvailabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25A3A121CEF1E1B00600389 /* NurseAvailabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseAvailabilityTests.swift; sourceTree = "<group>"; };
+		A25A3A141CEF1E1B00600389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25A3A191CEF1E1B00600389 /* NurseAvailabilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NurseAvailabilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25A3A1D1CEF1E1B00600389 /* NurseAvailabilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseAvailabilityUITests.swift; sourceTree = "<group>"; };
+		A25A3A1F1CEF1E1B00600389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A25A39F71CEF1E1B00600389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A3A0B1CEF1E1B00600389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A3A161CEF1E1B00600389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A25A39F11CEF1E1B00600389 = {
+			isa = PBXGroup;
+			children = (
+				A25A39FC1CEF1E1B00600389 /* NurseAvailability */,
+				A25A3A111CEF1E1B00600389 /* NurseAvailabilityTests */,
+				A25A3A1C1CEF1E1B00600389 /* NurseAvailabilityUITests */,
+				A25A39FB1CEF1E1B00600389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A25A39FB1CEF1E1B00600389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A25A39FA1CEF1E1B00600389 /* NurseAvailability.app */,
+				A25A3A0E1CEF1E1B00600389 /* NurseAvailabilityTests.xctest */,
+				A25A3A191CEF1E1B00600389 /* NurseAvailabilityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A25A39FC1CEF1E1B00600389 /* NurseAvailability */ = {
+			isa = PBXGroup;
+			children = (
+				A25A39FD1CEF1E1B00600389 /* AppDelegate.swift */,
+				A25A39FF1CEF1E1B00600389 /* ViewController.swift */,
+				A25A3A011CEF1E1B00600389 /* Main.storyboard */,
+				A25A3A041CEF1E1B00600389 /* Assets.xcassets */,
+				A25A3A061CEF1E1B00600389 /* LaunchScreen.storyboard */,
+				A25A3A091CEF1E1B00600389 /* Info.plist */,
+			);
+			path = NurseAvailability;
+			sourceTree = "<group>";
+		};
+		A25A3A111CEF1E1B00600389 /* NurseAvailabilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				A25A3A121CEF1E1B00600389 /* NurseAvailabilityTests.swift */,
+				A25A3A141CEF1E1B00600389 /* Info.plist */,
+			);
+			path = NurseAvailabilityTests;
+			sourceTree = "<group>";
+		};
+		A25A3A1C1CEF1E1B00600389 /* NurseAvailabilityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A25A3A1D1CEF1E1B00600389 /* NurseAvailabilityUITests.swift */,
+				A25A3A1F1CEF1E1B00600389 /* Info.plist */,
+			);
+			path = NurseAvailabilityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A25A39F91CEF1E1B00600389 /* NurseAvailability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25A3A221CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailability" */;
+			buildPhases = (
+				A25A39F61CEF1E1B00600389 /* Sources */,
+				A25A39F71CEF1E1B00600389 /* Frameworks */,
+				A25A39F81CEF1E1B00600389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NurseAvailability;
+			productName = NurseAvailability;
+			productReference = A25A39FA1CEF1E1B00600389 /* NurseAvailability.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A25A3A0D1CEF1E1B00600389 /* NurseAvailabilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25A3A251CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailabilityTests" */;
+			buildPhases = (
+				A25A3A0A1CEF1E1B00600389 /* Sources */,
+				A25A3A0B1CEF1E1B00600389 /* Frameworks */,
+				A25A3A0C1CEF1E1B00600389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A25A3A101CEF1E1B00600389 /* PBXTargetDependency */,
+			);
+			name = NurseAvailabilityTests;
+			productName = NurseAvailabilityTests;
+			productReference = A25A3A0E1CEF1E1B00600389 /* NurseAvailabilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A25A3A181CEF1E1B00600389 /* NurseAvailabilityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25A3A281CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailabilityUITests" */;
+			buildPhases = (
+				A25A3A151CEF1E1B00600389 /* Sources */,
+				A25A3A161CEF1E1B00600389 /* Frameworks */,
+				A25A3A171CEF1E1B00600389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A25A3A1B1CEF1E1B00600389 /* PBXTargetDependency */,
+			);
+			name = NurseAvailabilityUITests;
+			productName = NurseAvailabilityUITests;
+			productReference = A25A3A191CEF1E1B00600389 /* NurseAvailabilityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A25A39F21CEF1E1B00600389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Marks and Spencer";
+				TargetAttributes = {
+					A25A39F91CEF1E1B00600389 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A25A3A0D1CEF1E1B00600389 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A25A39F91CEF1E1B00600389;
+					};
+					A25A3A181CEF1E1B00600389 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A25A39F91CEF1E1B00600389;
+					};
+				};
+			};
+			buildConfigurationList = A25A39F51CEF1E1B00600389 /* Build configuration list for PBXProject "NurseAvailability" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A25A39F11CEF1E1B00600389;
+			productRefGroup = A25A39FB1CEF1E1B00600389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A25A39F91CEF1E1B00600389 /* NurseAvailability */,
+				A25A3A0D1CEF1E1B00600389 /* NurseAvailabilityTests */,
+				A25A3A181CEF1E1B00600389 /* NurseAvailabilityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A25A39F81CEF1E1B00600389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25A3A081CEF1E1B00600389 /* LaunchScreen.storyboard in Resources */,
+				A25A3A051CEF1E1B00600389 /* Assets.xcassets in Resources */,
+				A25A3A031CEF1E1B00600389 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A3A0C1CEF1E1B00600389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A3A171CEF1E1B00600389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A25A39F61CEF1E1B00600389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25A3A001CEF1E1B00600389 /* ViewController.swift in Sources */,
+				A25A39FE1CEF1E1B00600389 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A3A0A1CEF1E1B00600389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25A3A131CEF1E1B00600389 /* NurseAvailabilityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A3A151CEF1E1B00600389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25A3A1E1CEF1E1B00600389 /* NurseAvailabilityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A25A3A101CEF1E1B00600389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A25A39F91CEF1E1B00600389 /* NurseAvailability */;
+			targetProxy = A25A3A0F1CEF1E1B00600389 /* PBXContainerItemProxy */;
+		};
+		A25A3A1B1CEF1E1B00600389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A25A39F91CEF1E1B00600389 /* NurseAvailability */;
+			targetProxy = A25A3A1A1CEF1E1B00600389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A25A3A011CEF1E1B00600389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A25A3A021CEF1E1B00600389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A25A3A061CEF1E1B00600389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A25A3A071CEF1E1B00600389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A25A3A201CEF1E1B00600389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A25A3A211CEF1E1B00600389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A25A3A231CEF1E1B00600389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NurseAvailability/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.NurseAvailability;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A25A3A241CEF1E1B00600389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NurseAvailability/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.NurseAvailability;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A25A3A261CEF1E1B00600389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NurseAvailabilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.NurseAvailabilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NurseAvailability.app/NurseAvailability";
+			};
+			name = Debug;
+		};
+		A25A3A271CEF1E1B00600389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NurseAvailabilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.NurseAvailabilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NurseAvailability.app/NurseAvailability";
+			};
+			name = Release;
+		};
+		A25A3A291CEF1E1B00600389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NurseAvailabilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.NurseAvailabilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NurseAvailability;
+			};
+			name = Debug;
+		};
+		A25A3A2A1CEF1E1B00600389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NurseAvailabilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.NurseAvailabilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NurseAvailability;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A25A39F51CEF1E1B00600389 /* Build configuration list for PBXProject "NurseAvailability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25A3A201CEF1E1B00600389 /* Debug */,
+				A25A3A211CEF1E1B00600389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A25A3A221CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25A3A231CEF1E1B00600389 /* Debug */,
+				A25A3A241CEF1E1B00600389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A25A3A251CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailabilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25A3A261CEF1E1B00600389 /* Debug */,
+				A25A3A271CEF1E1B00600389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A25A3A281CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailabilityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25A3A291CEF1E1B00600389 /* Debug */,
+				A25A3A2A1CEF1E1B00600389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A25A39F21CEF1E1B00600389 /* Project object */;
+}
