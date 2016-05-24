@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+protocol ValidatorProtocol {
+    func isValid(enteredText: String) -> Bool
+}
+
+class FirstNameValidator: ValidatorProtocol {
+    func isValid(enteredText: String) -> Bool {
+        return enteredText.containsString(" ")
+    }
+}
+
+class PhoneNumberValidator: ValidatorProtocol {
+    func isValid(enteredText: String) -> Bool {
+        return enteredText.characters.count > 10 && enteredText.characters.count < 12
+    }
+}
+
+class EmailAddressValidator: ValidatorProtocol {
+    func isValid(enteredText: String) -> Bool {
+        return enteredText.containsString("@") && enteredText.containsString(".")
+    }
+}

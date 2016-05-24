@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A25A39FE1CEF1E1B00600389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A39FD1CEF1E1B00600389 /* AppDelegate.swift */; };
-		A25A3A001CEF1E1B00600389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A39FF1CEF1E1B00600389 /* ViewController.swift */; };
 		A25A3A031CEF1E1B00600389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25A3A011CEF1E1B00600389 /* Main.storyboard */; };
 		A25A3A051CEF1E1B00600389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25A3A041CEF1E1B00600389 /* Assets.xcassets */; };
 		A25A3A081CEF1E1B00600389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25A3A061CEF1E1B00600389 /* LaunchScreen.storyboard */; };
 		A25A3A131CEF1E1B00600389 /* NurseAvailabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A121CEF1E1B00600389 /* NurseAvailabilityTests.swift */; };
 		A25A3A1E1CEF1E1B00600389 /* NurseAvailabilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A1D1CEF1E1B00600389 /* NurseAvailabilityUITests.swift */; };
+		A25A3A361CEF476100600389 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A351CEF476100600389 /* SignUpViewController.swift */; };
+		A25A3A3C1CEF70EA00600389 /* SignUpDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A3B1CEF70EA00600389 /* SignUpDetailsView.swift */; };
+		A299E0E81CF4548700DDC539 /* NurseSignUpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0E71CF4548700DDC539 /* NurseSignUpClient.swift */; };
+		A299E0EB1CF49F6D00DDC539 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0EA1CF49F6D00DDC539 /* Validator.swift */; };
+		A299E0ED1CF4F5E400DDC539 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0EC1CF4F5E400DDC539 /* HomeViewController.swift */; };
+		A299E0EF1CF4F5F100DDC539 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0EE1CF4F5F100DDC539 /* SignUpViewModel.swift */; };
+		A299E0F11CF4F60100DDC539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0F01CF4F60100DDC539 /* AppDelegate.swift */; };
+		A299E0F61CF4F61F00DDC539 /* nurse_login.png in Resources */ = {isa = PBXBuildFile; fileRef = A299E0F41CF4F61F00DDC539 /* nurse_login.png */; };
+		A299E0F71CF4F61F00DDC539 /* nurse_register.png in Resources */ = {isa = PBXBuildFile; fileRef = A299E0F51CF4F61F00DDC539 /* nurse_register.png */; };
+		A299E0F91CF4F66700DDC539 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A299E0F81CF4F66700DDC539 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +43,25 @@
 
 /* Begin PBXFileReference section */
 		A25A39FA1CEF1E1B00600389 /* NurseAvailability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NurseAvailability.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A25A39FD1CEF1E1B00600389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A25A39FF1CEF1E1B00600389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A25A3A021CEF1E1B00600389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A25A3A041CEF1E1B00600389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25A3A071CEF1E1B00600389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A25A3A091CEF1E1B00600389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A25A3A0E1CEF1E1B00600389 /* NurseAvailabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NurseAvailabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25A3A121CEF1E1B00600389 /* NurseAvailabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseAvailabilityTests.swift; sourceTree = "<group>"; };
 		A25A3A141CEF1E1B00600389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A25A3A191CEF1E1B00600389 /* NurseAvailabilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NurseAvailabilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25A3A1D1CEF1E1B00600389 /* NurseAvailabilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseAvailabilityUITests.swift; sourceTree = "<group>"; };
 		A25A3A1F1CEF1E1B00600389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25A3A351CEF476100600389 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ViewController/SignUpViewController.swift; sourceTree = "<group>"; };
+		A25A3A3B1CEF70EA00600389 /* SignUpDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpDetailsView.swift; path = View/SignUpDetailsView.swift; sourceTree = "<group>"; };
+		A299E0E71CF4548700DDC539 /* NurseSignUpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NurseSignUpClient.swift; path = Network/NurseSignUpClient.swift; sourceTree = "<group>"; };
+		A299E0EA1CF49F6D00DDC539 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator.swift; sourceTree = "<group>"; };
+		A299E0EC1CF4F5E400DDC539 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ViewController/HomeViewController.swift; sourceTree = "<group>"; };
+		A299E0EE1CF4F5F100DDC539 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = ViewModel/SignUpViewModel.swift; sourceTree = "<group>"; };
+		A299E0F01CF4F60100DDC539 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
+		A299E0F41CF4F61F00DDC539 /* nurse_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nurse_login.png; path = "Supporting Files/Images/nurse_login.png"; sourceTree = "<group>"; };
+		A299E0F51CF4F61F00DDC539 /* nurse_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nurse_register.png; path = "Supporting Files/Images/nurse_register.png"; sourceTree = "<group>"; };
+		A299E0F81CF4F66700DDC539 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +89,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942208322C97BA055E8F3B32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A25A39F11CEF1E1B00600389 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,7 @@
 				A25A3A111CEF1E1B00600389 /* NurseAvailabilityTests */,
 				A25A3A1C1CEF1E1B00600389 /* NurseAvailabilityUITests */,
 				A25A39FB1CEF1E1B00600389 /* Products */,
+				942208322C97BA055E8F3B32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +120,14 @@
 		A25A39FC1CEF1E1B00600389 /* NurseAvailability */ = {
 			isa = PBXGroup;
 			children = (
-				A25A39FD1CEF1E1B00600389 /* AppDelegate.swift */,
-				A25A39FF1CEF1E1B00600389 /* ViewController.swift */,
+				A299E0E91CF49F5C00DDC539 /* Validator */,
+				A299E0E51CF451EA00DDC539 /* Network */,
+				A25A3A3A1CEF70CC00600389 /* View */,
+				A25A3A341CEF474300600389 /* ViewController */,
+				A299E0DF1CF34BF100DDC539 /* ViewModel */,
+				A299E0F01CF4F60100DDC539 /* AppDelegate.swift */,
 				A25A3A011CEF1E1B00600389 /* Main.storyboard */,
-				A25A3A041CEF1E1B00600389 /* Assets.xcassets */,
-				A25A3A061CEF1E1B00600389 /* LaunchScreen.storyboard */,
-				A25A3A091CEF1E1B00600389 /* Info.plist */,
+				A25A3A2B1CEF21F800600389 /* Supporting Files */,
 			);
 			path = NurseAvailability;
 			sourceTree = "<group>";
@@ -123,6 +148,75 @@
 				A25A3A1F1CEF1E1B00600389 /* Info.plist */,
 			);
 			path = NurseAvailabilityUITests;
+			sourceTree = "<group>";
+		};
+		A25A3A2B1CEF21F800600389 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A299E0F81CF4F66700DDC539 /* Info.plist */,
+				A25A3A061CEF1E1B00600389 /* LaunchScreen.storyboard */,
+				A25A3A041CEF1E1B00600389 /* Assets.xcassets */,
+				A25A3A2C1CEF21FE00600389 /* Images */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A25A3A2C1CEF21FE00600389 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A25A3A2D1CEF220200600389 /* Login */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A25A3A2D1CEF220200600389 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A299E0F41CF4F61F00DDC539 /* nurse_login.png */,
+				A299E0F51CF4F61F00DDC539 /* nurse_register.png */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A25A3A341CEF474300600389 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A299E0EC1CF4F5E400DDC539 /* HomeViewController.swift */,
+				A25A3A351CEF476100600389 /* SignUpViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A25A3A3A1CEF70CC00600389 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A25A3A3B1CEF70EA00600389 /* SignUpDetailsView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A299E0DF1CF34BF100DDC539 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A299E0EE1CF4F5F100DDC539 /* SignUpViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A299E0E51CF451EA00DDC539 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A299E0E71CF4548700DDC539 /* NurseSignUpClient.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		A299E0E91CF49F5C00DDC539 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				A299E0EA1CF49F6D00DDC539 /* Validator.swift */,
+			);
+			name = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25A3A081CEF1E1B00600389 /* LaunchScreen.storyboard in Resources */,
+				A299E0F71CF4F61F00DDC539 /* nurse_register.png in Resources */,
+				A299E0F91CF4F66700DDC539 /* Info.plist in Resources */,
+				A299E0F61CF4F61F00DDC539 /* nurse_login.png in Resources */,
 				A25A3A051CEF1E1B00600389 /* Assets.xcassets in Resources */,
 				A25A3A031CEF1E1B00600389 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +353,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25A3A001CEF1E1B00600389 /* ViewController.swift in Sources */,
-				A25A39FE1CEF1E1B00600389 /* AppDelegate.swift in Sources */,
+				A299E0F11CF4F60100DDC539 /* AppDelegate.swift in Sources */,
+				A25A3A3C1CEF70EA00600389 /* SignUpDetailsView.swift in Sources */,
+				A299E0EF1CF4F5F100DDC539 /* SignUpViewModel.swift in Sources */,
+				A299E0ED1CF4F5E400DDC539 /* HomeViewController.swift in Sources */,
+				A299E0EB1CF49F6D00DDC539 /* Validator.swift in Sources */,
+				A25A3A361CEF476100600389 /* SignUpViewController.swift in Sources */,
+				A299E0E81CF4548700DDC539 /* NurseSignUpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +584,7 @@
 				A25A3A241CEF1E1B00600389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25A3A251CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailabilityTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +593,7 @@
 				A25A3A271CEF1E1B00600389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25A3A281CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailabilityUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +602,7 @@
 				A25A3A2A1CEF1E1B00600389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

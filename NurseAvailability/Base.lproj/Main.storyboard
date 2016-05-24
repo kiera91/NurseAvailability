@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3iy-Rp-nny">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="HomeViewController" customModule="NurseAvailability" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,189 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwb-1w-mfc">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="MAh-SO-CWb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
+                                <state key="normal" title="Sign up" backgroundImage="nurse_register.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MAh-SO-CWb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="dlA-XI-41K" kind="presentation" modalPresentationStyle="overCurrentContext" id="vdH-BT-p3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWS-vk-d0V">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.14609374999999999" green="0.45360991379310345" blue="0.89582435344827582" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="LaI-Ng-YUl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login" backgroundImage="nurse_login.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LaI-Ng-YUl"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GWS-vk-d0V" secondAttribute="trailing" id="3mq-Qg-bJp"/>
+                            <constraint firstAttribute="trailing" secondItem="Pwb-1w-mfc" secondAttribute="trailing" id="AWy-4G-ysJ"/>
+                            <constraint firstItem="GWS-vk-d0V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Iym-Mp-mCj"/>
+                            <constraint firstItem="GWS-vk-d0V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="L77-sa-EtD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pwb-1w-mfc" secondAttribute="bottom" id="NKa-6H-M8F"/>
+                            <constraint firstItem="GWS-vk-d0V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="enw-5b-tK9"/>
+                            <constraint firstItem="Pwb-1w-mfc" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="gvK-or-uRJ"/>
+                            <constraint firstItem="Pwb-1w-mfc" firstAttribute="top" secondItem="GWS-vk-d0V" secondAttribute="bottom" id="otl-On-Czv"/>
+                            <constraint firstItem="Pwb-1w-mfc" firstAttribute="height" secondItem="GWS-vk-d0V" secondAttribute="height" id="rR2-hr-3OI"/>
+                            <constraint firstItem="Pwb-1w-mfc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="slh-xI-QsF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L77-sa-EtD"/>
+                                <exclude reference="NKa-6H-M8F"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Pfe-13-FpN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1675" y="604"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="dk4-bw-mL1">
+            <objects>
+                <viewController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="overCurrentContext" id="dlA-XI-41K" userLabel="Sign Up View Controller" customClass="SignUpViewController" customModule="NurseAvailability" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DU9-pM-uMh"/>
+                        <viewControllerLayoutGuide type="bottom" id="vq4-jg-amW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cS8-er-9zd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXf-Jl-EKg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj5-JE-4xr">
+                                        <rect key="frame" x="0.0" y="30" width="46" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="QoT-hp-u3L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeView" destination="dlA-XI-41K" eventType="touchUpInside" id="rLx-12-FH7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xj5-JE-4xr" firstAttribute="leading" secondItem="DXf-Jl-EKg" secondAttribute="leading" id="iJ6-to-3zp"/>
+                                    <constraint firstItem="Xj5-JE-4xr" firstAttribute="top" secondItem="DXf-Jl-EKg" secondAttribute="top" constant="30" id="se5-qJ-BLz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1p-GX-mbQ" userLabel="EnteredDetails" customClass="SignUpDetailsView" customModule="NurseAvailability" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="540" width="600" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="B1D-0P-wLP"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your full name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBI-4j-FbG">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PNS-xm-RaE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="emergencyCall"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1z-0H-5Ap">
+                                <rect key="frame" x="545" y="555" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextField" destination="dlA-XI-41K" eventType="touchUpInside" id="VMb-9M-s5P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="DXf-Jl-EKg" firstAttribute="top" secondItem="cS8-er-9zd" secondAttribute="topMargin" id="Fbk-Ls-apN"/>
+                            <constraint firstItem="ZBI-4j-FbG" firstAttribute="top" secondItem="b1p-GX-mbQ" secondAttribute="top" id="GMf-ET-qeY"/>
+                            <constraint firstItem="b1p-GX-mbQ" firstAttribute="leading" secondItem="cS8-er-9zd" secondAttribute="leadingMargin" id="GuO-Or-SmN"/>
+                            <constraint firstAttribute="trailing" secondItem="b1p-GX-mbQ" secondAttribute="trailing" id="K5C-ZE-xxj"/>
+                            <constraint firstAttribute="trailing" secondItem="g1z-0H-5Ap" secondAttribute="trailing" constant="20" id="Kqv-Bj-Qy6"/>
+                            <constraint firstItem="DXf-Jl-EKg" firstAttribute="leading" secondItem="cS8-er-9zd" secondAttribute="leading" id="Qxq-34-YTx"/>
+                            <constraint firstAttribute="trailing" secondItem="DXf-Jl-EKg" secondAttribute="trailing" id="Uca-ZM-Jsr"/>
+                            <constraint firstItem="g1z-0H-5Ap" firstAttribute="centerY" secondItem="ZBI-4j-FbG" secondAttribute="centerY" id="Xpp-Nc-Cy9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b1p-GX-mbQ" secondAttribute="trailing" id="fOF-rs-tpL"/>
+                            <constraint firstItem="b1p-GX-mbQ" firstAttribute="leading" secondItem="cS8-er-9zd" secondAttribute="leading" id="iLM-Pz-SXU"/>
+                            <constraint firstItem="vq4-jg-amW" firstAttribute="top" secondItem="ZBI-4j-FbG" secondAttribute="bottom" id="l3U-zw-tu8"/>
+                            <constraint firstItem="ZBI-4j-FbG" firstAttribute="leading" secondItem="cS8-er-9zd" secondAttribute="leading" id="pxs-Ue-VqS"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBI-4j-FbG" secondAttribute="trailing" id="qjR-tn-Lzb"/>
+                            <constraint firstItem="vq4-jg-amW" firstAttribute="top" secondItem="DXf-Jl-EKg" secondAttribute="bottom" id="swC-LY-KQc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GuO-Or-SmN"/>
+                                <exclude reference="fOF-rs-tpL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="BaI-Ol-7ze"/>
+                    <connections>
+                        <outlet property="enteredDetailsTopConstraint" destination="GMf-ET-qeY" id="YXz-KD-Wq2"/>
+                        <outlet property="inputTextField" destination="ZBI-4j-FbG" id="pfc-4N-VVL"/>
+                        <outlet property="inputTextFieldBottomConstraint" destination="l3U-zw-tu8" id="lao-HG-VIW"/>
+                        <outlet property="nextFieldButton" destination="g1z-0H-5Ap" id="xHJ-S7-t8d"/>
+                        <outlet property="signUpDetailsView" destination="b1p-GX-mbQ" id="YNM-TY-sQj"/>
+                        <outlet property="signUpDetailsViewHeight" destination="B1D-0P-wLP" id="0is-gp-wlQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZJ-eL-6av" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413" y="1183"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TJa-qg-F8R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3iy-Rp-nny" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="30s-Ap-Cfe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xZT-zt-fJg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNj-d7-0N7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="604"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nurse_login.png" width="600" height="400"/>
+        <image name="nurse_register.png" width="600" height="400"/>
+    </resources>
 </document>

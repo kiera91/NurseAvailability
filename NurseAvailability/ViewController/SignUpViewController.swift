@@ -10,19 +10,15 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var inputTextFieldBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var enteredDetailsTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var nextFieldButton: UIButton!
+    
     @IBOutlet weak var signUpDetailsView: SignUpDetailsView!
+    @IBOutlet weak var signUpDetailsViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var enteredDetailsTopConstraint: NSLayoutConstraint!
     
-    var dataToStore: [String] = []
-    
-    // Put this in a struct
-    var inputFieldsAndText = [
-        ["key": "fullName", "placeholder": "Enter your full name", "textFieldTag": 1],
-        ["key": "phoneNumber", "placeholder": "Enter your phone number", "textFieldTag": 2],
-        ["key": "emailAddress", "placeholder": "Enter your email address", "textFieldTag": 3],
-        ["key": "nurseId", "placeholder": "Enter your nursing id", "textFieldTag": 4]
-    ]
+    var signUpViewModel = SignUpViewModel()
+    var activityView:UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +27,30 @@ class SignUpViewController: UIViewController {
         inputTextField.becomeFirstResponder()
         
         setTouchRecogniser()
-        setupTextFieldWithCorrectPlaceholder(inputFieldsAndText.startIndex)
+        setupTextFieldWithCorrectPlaceholder()
+        
+        signUpDetailsViewHeight.constant = CGFloat(signUpViewModel.inputFieldsAndText.count) * 30
+        
+        setupActivityIndicator()
+        
+        signUpViewModel.showActivityIndicator = showActivityIndicator
     }
     
-    func setupTextFieldWithCorrectPlaceholder(index: Int) {
-        inputTextField.placeholder = inputFieldsAndText[index]["placeholder"] as? String
-        inputTextField.tag = inputFieldsAndText[index]["textFieldTag"] as! Int
+    func setupActivityIndicator() {
+       activityView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        activityView.center = self.view.center
+        activityView.hidesWhenStopped = true
+        view.addSubview(activityView)
+    }
+    
+    func setupTextFieldWithCorrectPlaceholder() {
+        inputTextField.text = ""
+        inputTextField.placeholder = signUpViewModel.currentInputField.placeholder
+        inputTextField.keyboardType = signUpViewModel.currentInputField.keyboardType
+        inputTextField.tag = signUpViewModel.currentInputField.tag
+        inputTextField.reloadInputViews()
+        
+        nextFieldButton.hidden = true
     }
     
     func dismissKeyboard() {
@@ -49,29 +63,69 @@ class SignUpViewController: UIViewController {
     }
     
     func storeEntryData(textfield: UITextField) {
-        dataToStore.append(textfield.text!)
-        signUpDetailsView.showTextFieldLabel(textfield.tag, text: textfield.text!)
+        signUpViewModel.storeData(textfield.text!)
+        signUpViewModel.updateCurrentAndNextInputFields(updatedCurrentTextfield, handleCompleteData: completeDataSent)
+    }
+    
+    func showActivityIndicator() {
+        activityView.startAnimating()
+    }
+    
+    func completeDataSent() {
+        activityView.stopAnimating()
+        dispatch_async(dispatch_get_main_queue(), {
+            self.dismissKeyboard()
+            self.showCompletedAlertView()
+        })
+    }
+    
+    func showCompletedAlertView() {
+        let alertController = UIAlertController(title: "Data sent successfully!", message:
+            "Someone will be in touch soon.", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
+            _ in
+            self.closeView()
+        }))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func updatedCurrentTextfield() {
+        signUpDetailsView.showTextFieldLabel(inputTextField.text!)
         animateView()
-        setupTextFieldWithCorrectPlaceholder(<#T##index: Int##Int#>)
+        setupTextFieldWithCorrectPlaceholder()
     }
     
     func animateView() {
-        enteredDetailsTopConstraint.constant += 29
+        enteredDetailsTopConstraint.constant += 40
+        UIView.animateWithDuration(0.5) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @IBAction func nextField() {
+        storeEntryData(inputTextField)
+    }
+    
+    @IBAction func closeView() {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
-extension SignInViewController: UITextFieldDelegate {
+extension SignUpViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(textField: UITextField) {
         animateViewForKeyboardVisible(true)
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if let _ = textField.text {
-            storeEntryData(textField)
-            
-            return true
-        }
-        return false
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let textFieldText: NSString = textField.text ?? ""
+        let currentText = textFieldText.stringByReplacingCharactersInRange(range, withString: string)
+        nextFieldButton.hidden = !signUpViewModel.currentInputField.validator.isValid(currentText)
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        view.hidden = true
     }
     
     func animateViewForKeyboardVisible(visible: Bool) {
