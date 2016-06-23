@@ -19,9 +19,9 @@ struct InputFieldData {
 
 class SignUpViewModel {
     let inputFieldsAndText = [
-        InputFieldData(key: "fullName", placeholder: "Enter your full name", tag: 1, keyboardType: .Default, validator: FirstNameValidator()),
-        InputFieldData(key: "phoneNumber", placeholder: "Enter your phone number", tag: 2, keyboardType: .PhonePad, validator: PhoneNumberValidator()),
-        InputFieldData(key: "emailAddress", placeholder: "Enter your email address", tag: 3, keyboardType: .EmailAddress, validator: EmailAddressValidator())
+        InputFieldData(key: "full_name", placeholder: "Enter your full name", tag: 1, keyboardType: .Default, validator: FirstNameValidator()),
+        InputFieldData(key: "phone_number", placeholder: "Enter your phone number", tag: 2, keyboardType: .PhonePad, validator: PhoneNumberValidator()),
+        InputFieldData(key: "email_address", placeholder: "Enter your email address", tag: 3, keyboardType: .EmailAddress, validator: EmailAddressValidator())
     ]
     
     var currentInputField: InputFieldData!
@@ -41,22 +41,22 @@ class SignUpViewModel {
         dataToStore[currentInputField.key] = textEntered
     }
     
-    func sendCompleteData(success: (() -> Void)) {
+    func sendCompleteData(success: (() -> Void), failure: (() -> Void)) {
         showActivityIndicator?()
-        nurseSignUpClient.postNurseDetails(dataToStore) {
+        nurseSignUpClient.postNurseDetails(dataToStore, success: {
             success()
+            }) { 
+                failure()
         }
     }
     
-    func updateCurrentAndNextInputFields(didUpdateCurrentField: (() -> Void), handleCompleteData: (() -> Void)) {
+    func updateCurrentAndNextInputFields(didUpdateCurrentField: (() -> Void), handleCompleteData: (() -> Void), failedNetworkRequest: (() -> Void)) {
         currentIndex += 1
         if currentIndex < inputFieldsAndText.count {
             currentInputField = inputFieldsAndText[currentIndex]
             didUpdateCurrentField()
         } else {
-            sendCompleteData() {
-                handleCompleteData()
-            }
+            sendCompleteData(handleCompleteData, failure: failedNetworkRequest)
         }
     }
 }

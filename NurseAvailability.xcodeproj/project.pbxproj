@@ -22,6 +22,9 @@
 		A299E0F61CF4F61F00DDC539 /* nurse_login.png in Resources */ = {isa = PBXBuildFile; fileRef = A299E0F41CF4F61F00DDC539 /* nurse_login.png */; };
 		A299E0F71CF4F61F00DDC539 /* nurse_register.png in Resources */ = {isa = PBXBuildFile; fileRef = A299E0F51CF4F61F00DDC539 /* nurse_register.png */; };
 		A299E0F91CF4F66700DDC539 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A299E0F81CF4F66700DDC539 /* Info.plist */; };
+		A2AEB8171CF7370A0006BEF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AEB8161CF7370A0006BEF2 /* LoginViewController.swift */; };
+		A2AEB8191CF73AD30006BEF2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AEB8181CF73AD30006BEF2 /* LoginViewModel.swift */; };
+		A2AEB81B1CF73BEC0006BEF2 /* NurseLoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AEB81A1CF73BEC0006BEF2 /* NurseLoginClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		A299E0F41CF4F61F00DDC539 /* nurse_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nurse_login.png; path = "Supporting Files/Images/nurse_login.png"; sourceTree = "<group>"; };
 		A299E0F51CF4F61F00DDC539 /* nurse_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nurse_register.png; path = "Supporting Files/Images/nurse_register.png"; sourceTree = "<group>"; };
 		A299E0F81CF4F66700DDC539 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AEB8161CF7370A0006BEF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = NurseAvailabilityUITests/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		A2AEB8181CF73AD30006BEF2 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
+		A2AEB81A1CF73BEC0006BEF2 /* NurseLoginClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NurseLoginClient.swift; path = Network/NurseLoginClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 			children = (
 				A299E0EC1CF4F5E400DDC539 /* HomeViewController.swift */,
 				A25A3A351CEF476100600389 /* SignUpViewController.swift */,
+				A2AEB8161CF7370A0006BEF2 /* LoginViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A299E0EE1CF4F5F100DDC539 /* SignUpViewModel.swift */,
+				A2AEB8181CF73AD30006BEF2 /* LoginViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A299E0E71CF4548700DDC539 /* NurseSignUpClient.swift */,
+				A2AEB81A1CF73BEC0006BEF2 /* NurseLoginClient.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -353,13 +362,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AEB81B1CF73BEC0006BEF2 /* NurseLoginClient.swift in Sources */,
 				A299E0F11CF4F60100DDC539 /* AppDelegate.swift in Sources */,
 				A25A3A3C1CEF70EA00600389 /* SignUpDetailsView.swift in Sources */,
 				A299E0EF1CF4F5F100DDC539 /* SignUpViewModel.swift in Sources */,
 				A299E0ED1CF4F5E400DDC539 /* HomeViewController.swift in Sources */,
+				A2AEB8171CF7370A0006BEF2 /* LoginViewController.swift in Sources */,
 				A299E0EB1CF49F6D00DDC539 /* Validator.swift in Sources */,
 				A25A3A361CEF476100600389 /* SignUpViewController.swift in Sources */,
 				A299E0E81CF4548700DDC539 /* NurseSignUpClient.swift in Sources */,
+				A2AEB8191CF73AD30006BEF2 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

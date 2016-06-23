@@ -37,7 +37,7 @@ class SignUpViewController: UIViewController {
     }
     
     func setupActivityIndicator() {
-       activityView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        activityView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
         activityView.center = self.view.center
         activityView.hidesWhenStopped = true
         view.addSubview(activityView)
@@ -64,7 +64,7 @@ class SignUpViewController: UIViewController {
     
     func storeEntryData(textfield: UITextField) {
         signUpViewModel.storeData(textfield.text!)
-        signUpViewModel.updateCurrentAndNextInputFields(updatedCurrentTextfield, handleCompleteData: completeDataSent)
+        signUpViewModel.updateCurrentAndNextInputFields(updatedCurrentTextfield, handleCompleteData: completeDataSent, failedNetworkRequest: showFailedAlertView)
     }
     
     func showActivityIndicator() {
@@ -77,6 +77,17 @@ class SignUpViewController: UIViewController {
             self.dismissKeyboard()
             self.showCompletedAlertView()
         })
+    }
+    
+    func showFailedAlertView() {
+        let alertController = UIAlertController(title: "Network Error", message:
+            "Please try again shortly.", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
+            _ in
+            self.closeView()
+        }))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     func showCompletedAlertView() {
