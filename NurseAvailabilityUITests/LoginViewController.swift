@@ -30,14 +30,15 @@ class LoginViewController: UIViewController {
     }
     
     func displayErrorMessage(errorString: String) {
-        let alertController = UIAlertController(title: errorString , message:
-            "", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
-            _ in
-        }))
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
-
+        dispatch_async(dispatch_get_main_queue(), {
+            let alertController = UIAlertController(title: errorString , message:
+                "", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
+                _ in
+            }))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        })
     }
 }
 
@@ -45,12 +46,12 @@ extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if let textFieldLabel = textField.accessibilityLabel {
             if textFieldLabel == "password" {
+                passwordTextfield.resignFirstResponder()
                 return true
             } else {
                 passwordTextfield.becomeFirstResponder()
             }
-        } else {
-            return false
         }
+        return false
     }
 }
