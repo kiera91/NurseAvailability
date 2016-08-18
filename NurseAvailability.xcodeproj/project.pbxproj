@@ -14,6 +14,8 @@
 		A25A3A1E1CEF1E1B00600389 /* NurseAvailabilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A1D1CEF1E1B00600389 /* NurseAvailabilityUITests.swift */; };
 		A25A3A361CEF476100600389 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A351CEF476100600389 /* SignUpViewController.swift */; };
 		A25A3A3C1CEF70EA00600389 /* SignUpDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25A3A3B1CEF70EA00600389 /* SignUpDetailsView.swift */; };
+		A279D6161D6269CF001A601D /* NurseEventClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279D6151D6269CF001A601D /* NurseEventClient.swift */; };
+		A279D6181D6506F0001A601D /* AvailabilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279D6171D6506EF001A601D /* AvailabilityViewModel.swift */; };
 		A299E0E81CF4548700DDC539 /* NurseSignUpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0E71CF4548700DDC539 /* NurseSignUpClient.swift */; };
 		A299E0EB1CF49F6D00DDC539 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0EA1CF49F6D00DDC539 /* Validator.swift */; };
 		A299E0ED1CF4F5E400DDC539 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E0EC1CF4F5E400DDC539 /* HomeViewController.swift */; };
@@ -25,6 +27,8 @@
 		A2AEB8171CF7370A0006BEF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AEB8161CF7370A0006BEF2 /* LoginViewController.swift */; };
 		A2AEB8191CF73AD30006BEF2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AEB8181CF73AD30006BEF2 /* LoginViewModel.swift */; };
 		A2AEB81B1CF73BEC0006BEF2 /* NurseLoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AEB81A1CF73BEC0006BEF2 /* NurseLoginClient.swift */; };
+		A2FAA1AB1D32CE07003BD207 /* AvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FAA1AA1D32CE07003BD207 /* AvailabilityViewController.swift */; };
+		E768AD95D23079F996057D89 /* libPods-NurseAvailability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E0CF860EE53A7CFCB340 /* libPods-NurseAvailability.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		478980AF62E625E515EC7212 /* Pods-NurseAvailability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NurseAvailability.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NurseAvailability/Pods-NurseAvailability.debug.xcconfig"; sourceTree = "<group>"; };
+		8ADCD76341EF18B9586E6E24 /* Pods-NurseAvailability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NurseAvailability.release.xcconfig"; path = "Pods/Target Support Files/Pods-NurseAvailability/Pods-NurseAvailability.release.xcconfig"; sourceTree = "<group>"; };
 		A25A39FA1CEF1E1B00600389 /* NurseAvailability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NurseAvailability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25A3A021CEF1E1B00600389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A25A3A041CEF1E1B00600389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +63,8 @@
 		A25A3A1F1CEF1E1B00600389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A25A3A351CEF476100600389 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ViewController/SignUpViewController.swift; sourceTree = "<group>"; };
 		A25A3A3B1CEF70EA00600389 /* SignUpDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpDetailsView.swift; path = View/SignUpDetailsView.swift; sourceTree = "<group>"; };
+		A279D6151D6269CF001A601D /* NurseEventClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NurseEventClient.swift; path = Network/NurseEventClient.swift; sourceTree = "<group>"; };
+		A279D6171D6506EF001A601D /* AvailabilityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailabilityViewModel.swift; path = ViewModel/AvailabilityViewModel.swift; sourceTree = "<group>"; };
 		A299E0E71CF4548700DDC539 /* NurseSignUpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NurseSignUpClient.swift; path = Network/NurseSignUpClient.swift; sourceTree = "<group>"; };
 		A299E0EA1CF49F6D00DDC539 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator.swift; sourceTree = "<group>"; };
 		A299E0EC1CF4F5E400DDC539 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ViewController/HomeViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +76,9 @@
 		A2AEB8161CF7370A0006BEF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = NurseAvailabilityUITests/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		A2AEB8181CF73AD30006BEF2 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
 		A2AEB81A1CF73BEC0006BEF2 /* NurseLoginClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NurseLoginClient.swift; path = Network/NurseLoginClient.swift; sourceTree = "<group>"; };
+		A2FAA1AA1D32CE07003BD207 /* AvailabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailabilityViewController.swift; path = ViewController/AvailabilityViewController.swift; sourceTree = "<group>"; };
+		A2FAA1AD1D32D905003BD207 /* NurseAvailability-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NurseAvailability-bridging-header.h"; path = "Supporting Files/NurseAvailability-bridging-header.h"; sourceTree = "<group>"; };
+		DAB3E0CF860EE53A7CFCB340 /* libPods-NurseAvailability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NurseAvailability.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E768AD95D23079F996057D89 /* libPods-NurseAvailability.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +110,7 @@
 		942208322C97BA055E8F3B32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAB3E0CF860EE53A7CFCB340 /* libPods-NurseAvailability.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +123,7 @@
 				A25A3A1C1CEF1E1B00600389 /* NurseAvailabilityUITests */,
 				A25A39FB1CEF1E1B00600389 /* Products */,
 				942208322C97BA055E8F3B32 /* Frameworks */,
+				D110E754C8512687C5F2A668 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +177,7 @@
 				A25A3A061CEF1E1B00600389 /* LaunchScreen.storyboard */,
 				A25A3A041CEF1E1B00600389 /* Assets.xcassets */,
 				A25A3A2C1CEF21FE00600389 /* Images */,
+				A2FAA1AD1D32D905003BD207 /* NurseAvailability-bridging-header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -190,6 +205,7 @@
 				A299E0EC1CF4F5E400DDC539 /* HomeViewController.swift */,
 				A25A3A351CEF476100600389 /* SignUpViewController.swift */,
 				A2AEB8161CF7370A0006BEF2 /* LoginViewController.swift */,
+				A2FAA1AA1D32CE07003BD207 /* AvailabilityViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -207,6 +223,7 @@
 			children = (
 				A299E0EE1CF4F5F100DDC539 /* SignUpViewModel.swift */,
 				A2AEB8181CF73AD30006BEF2 /* LoginViewModel.swift */,
+				A279D6171D6506EF001A601D /* AvailabilityViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -216,6 +233,7 @@
 			children = (
 				A299E0E71CF4548700DDC539 /* NurseSignUpClient.swift */,
 				A2AEB81A1CF73BEC0006BEF2 /* NurseLoginClient.swift */,
+				A279D6151D6269CF001A601D /* NurseEventClient.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -228,6 +246,15 @@
 			name = Validator;
 			sourceTree = "<group>";
 		};
+		D110E754C8512687C5F2A668 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				478980AF62E625E515EC7212 /* Pods-NurseAvailability.debug.xcconfig */,
+				8ADCD76341EF18B9586E6E24 /* Pods-NurseAvailability.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25A3A221CEF1E1B00600389 /* Build configuration list for PBXNativeTarget "NurseAvailability" */;
 			buildPhases = (
+				9AC191CBC38988464377B878 /* Check Pods Manifest.lock */,
 				A25A39F61CEF1E1B00600389 /* Sources */,
 				A25A39F71CEF1E1B00600389 /* Frameworks */,
 				A25A39F81CEF1E1B00600389 /* Resources */,
+				094EA92799D20BCDE9145FC1 /* Embed Pods Frameworks */,
+				C865D078363F86A8B1C96B35 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,6 +387,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		094EA92799D20BCDE9145FC1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NurseAvailability/Pods-NurseAvailability-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC191CBC38988464377B878 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C865D078363F86A8B1C96B35 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NurseAvailability/Pods-NurseAvailability-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A25A39F61CEF1E1B00600389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -364,12 +442,15 @@
 			files = (
 				A2AEB81B1CF73BEC0006BEF2 /* NurseLoginClient.swift in Sources */,
 				A299E0F11CF4F60100DDC539 /* AppDelegate.swift in Sources */,
+				A2FAA1AB1D32CE07003BD207 /* AvailabilityViewController.swift in Sources */,
+				A279D6161D6269CF001A601D /* NurseEventClient.swift in Sources */,
 				A25A3A3C1CEF70EA00600389 /* SignUpDetailsView.swift in Sources */,
 				A299E0EF1CF4F5F100DDC539 /* SignUpViewModel.swift in Sources */,
 				A299E0ED1CF4F5E400DDC539 /* HomeViewController.swift in Sources */,
 				A2AEB8171CF7370A0006BEF2 /* LoginViewController.swift in Sources */,
 				A299E0EB1CF49F6D00DDC539 /* Validator.swift in Sources */,
 				A25A3A361CEF476100600389 /* SignUpViewController.swift in Sources */,
+				A279D6181D6506F0001A601D /* AvailabilityViewModel.swift in Sources */,
 				A299E0E81CF4548700DDC539 /* NurseSignUpClient.swift in Sources */,
 				A2AEB8191CF73AD30006BEF2 /* LoginViewModel.swift in Sources */,
 			);
@@ -467,6 +548,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "NurseAvailability/Supporting Files/NurseAvailability-bridging-header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -505,12 +587,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "NurseAvailability/Supporting Files/NurseAvailability-bridging-header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		A25A3A231CEF1E1B00600389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478980AF62E625E515EC7212 /* Pods-NurseAvailability.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NurseAvailability/Info.plist;
@@ -522,6 +606,7 @@
 		};
 		A25A3A241CEF1E1B00600389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADCD76341EF18B9586E6E24 /* Pods-NurseAvailability.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NurseAvailability/Info.plist;

@@ -22,6 +22,22 @@ class LoginViewController: UIViewController {
         loginViewModel.displayLoginError = { [weak self] errorString in
             self?.displayErrorMessage(errorString)
         }
+        loginViewModel.showCalendarView = displayCalendarView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        getCurrentEvents()
+    }
+    
+    func getCurrentEvents() {
+        if let nurseId = NSUserDefaults.standardUserDefaults().stringForKey("nurseId") {
+            print(nurseId)
+            
+            
+            
+        }
     }
 
     @IBAction func signInAction() {
@@ -29,15 +45,21 @@ class LoginViewController: UIViewController {
         loginViewModel.makeSignInRequest(params)
     }
     
+    func displayCalendarView() {
+        dispatch_async(dispatch_get_main_queue(), { [weak self] in
+            self?.performSegueWithIdentifier("calendarViewController", sender: self)
+        })
+    }
+    
     func displayErrorMessage(errorString: String) {
-        dispatch_async(dispatch_get_main_queue(), {
+        dispatch_async(dispatch_get_main_queue(), { [weak self] in
             let alertController = UIAlertController(title: errorString , message:
                 "", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
                 _ in
             }))
             
-            self.presentViewController(alertController, animated: true, completion: nil)
+            self?.presentViewController(alertController, animated: true, completion: nil)
         })
     }
 }
